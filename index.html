@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Light It Up</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="index.js"></script>
 </head>
 <body>
-    <div class="content__container">
-        <h1 class="title">LIGHT IT UP</h1>
-        <div class="light"></div>
-        <img class="image" src="assets/lightBulb.png" alt="light bulb">
-        <button class="button__start">START</button>
-    </div>
+    <section class="content">
+        <div class="content__container">
+            <h1 class="title">LIGHT IT UP</h1>
+            <div id="light"></div>
+            <img class="image" src="assets/lightBulb.png" alt="light bulb">
+            <button id="button__start" onclick="lightItUp()">TURN ON</button>
+        </div>
+        <img id="arrow" src="assets/arrow.png">
+    </section>
 </body>
 </html> 

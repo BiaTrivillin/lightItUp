@@ -13,15 +13,16 @@ body {
 
 .title {
     font-family: 'Roboto', sans-serif;
-    font-size: 90px;
+    font-size: 80px;
     color: #f6f6f6f6;
-    padding-top: 2%;
+    padding-top: 5%;
+    text-align: center;
 }
 
 .image{
-    /* transform: scale(); */
     /* transform: rotate(180deg); */
-    padding: 3% 0 3% 0; /* imagem está rotacionada  */
+    padding: 1% 0 1% 0;
+    transform: scale(0.9);
 }
 
 .content__container {
@@ -29,27 +30,29 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    justify-self: end;
 }
 
-.button__start {
+#button__start {
     /* background-color: #844E9C; */
     background-color: transparent;
     font-family: 'Roboto', sans-serif;
-    font-size: 30px;
+    font-size: 20px;
     padding: 0.5em;
     border-radius: 50px;
     color: #f6f6f6f6;
     border: #844E9C solid 3px;
     width: 6em;
     cursor: pointer;
+    margin-bottom: 1%;
 }
 
-.content {
-    display: grid;
-    grid-template-columns: 66% auto;
+#button__start:hover {
+    background-color: #844E9C;
 }
 
-.light {
+#light {
+    display: none;
     /* margin-left: 10px; */
     position: absolute;
     /* margin-top: 140px; */
@@ -64,11 +67,25 @@ body {
         0 0 140px 90px #0ff; /* outer cyan */
 }
 
-/* .bolinha {
-    overflow: hidden;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #fff;
-} */
+.content {
+    display: grid;
+    grid-template-columns: 67% 31%;
+}
+
+#arrow {
+    animation: is-bouncing 1s ease-in-out infinite;
+    align-self: center;
+    cursor: pointer;
+    height: 100px;
+    justify-self: end;
+    display: none;
+    margin-top: 60px;
+}
+
+@keyframes is-bouncing {
+    to {
+        transform: translateX(20px);
+    }
+}
+
 
