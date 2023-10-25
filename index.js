@@ -7,4 +7,3 @@ function lightItUp() {
     buttonStart.style.display = "none";
     arrow.style.display = "block";
 }
-
