@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    min-width: 100%;
+    background-color: #000F26;
+}
+
+.title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 90px;
+    color: #f6f6f6f6;
+    padding-top: 2%;
+}
+
+.image{
+    /* transform: scale(); */
+    /* transform: rotate(180deg); */
+    padding: 3% 0 3% 0; /* imagem está rotacionada  */
+}
+
+.content__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.button__start {
+    /* background-color: #844E9C; */
+    background-color: transparent;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    padding: 0.5em;
+    border-radius: 50px;
+    color: #f6f6f6f6;
+    border: #844E9C solid 3px;
+    width: 6em;
+    cursor: pointer;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 66% auto;
+}
+
+.light {
+    /* margin-left: 10px; */
+    position: absolute;
+    /* margin-top: 140px; */
+    overflow: hidden;
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow:
+        0 0 60px 30px #fff,  /* inner white */
+        0 0 100px 60px #f0f, /* middle magenta */
+        0 0 140px 90px #0ff; /* outer cyan */
+}
+
+/* .bolinha {
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+} */
+
