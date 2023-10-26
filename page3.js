@@ -1,12 +1,11 @@
 const shadow = document.querySelector('#shadow');
 const titleOne = document.querySelector('.title__one')
-const titleTwo = document.querySelector('.title__two')
+// const titleTwo = document.querySelector('.title__two')
 const door = document.querySelector('#door')
 const arrow = document.querySelector('#arrow')
 
 function isGettingBig() {
     titleOne.style.display = 'none'
-    titleTwo.style.display = 'none'
     door.style.display = 'none'
     shadow.style.cursor = "default"
     shadow.animate(
@@ -15,7 +14,7 @@ function isGettingBig() {
         ],
 
         {
-            duration: 2000,
+            duration: 5000,
             iterations: 1,
             fill: "forwards",
         },

@@ -30,7 +30,7 @@ body{
     width: 220px;
     height: 395px;
     background-color: #000;
-    animation: slide-rotate-ver-right 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s 1 forwards;
+    animation: slide-rotate-ver-right 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s 1 forwards;
 }
 
 #shadow h1, h2{
