@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url(../styles/animations.css);
 
 * {
     margin: 0;
@@ -15,14 +16,16 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 80px;
     color: #f6f6f6f6;
-    padding-top: 5%;
+    padding-top: 8%;
     text-align: center;
+    animation: appear 1s ease-in-out forwards;
 }
 
 .image{
-    /* transform: rotate(180deg); */
     padding: 1% 0 1% 0;
     transform: scale(0.9);
+    animation: appear 1s ease-in-out 1s forwards;
+    opacity: 0;
 }
 
 .content__container {
@@ -34,7 +37,6 @@ body {
 }
 
 #button__start {
-    /* background-color: #844E9C; */
     background-color: transparent;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
@@ -45,6 +47,7 @@ body {
     width: 6em;
     cursor: pointer;
     margin-bottom: 1%;
+    animation: get-big 1s ease-in-out forwards;
 }
 
 #button__start:hover {
@@ -53,23 +56,21 @@ body {
 
 #light {
     display: none;
-    /* margin-left: 10px; */
     position: absolute;
-    /* margin-top: 140px; */
     overflow: hidden;
     width: 0px;
     height: 0px;
     border-radius: 50%;
     background-color: #fff;
     box-shadow:
-        0 0 60px 30px #fff,  /* inner white */
-        0 0 100px 60px #f0f, /* middle magenta */
-        0 0 140px 90px #0ff; /* outer cyan */
+        0 0 60px 30px #fff,  
+        0 0 100px 60px #f0f, 
+        0 0 140px 90px #0ff; 
 }
 
 .content {
     display: grid;
-    grid-template-columns: 67% 31%;
+    grid-template-columns: 65% 31%;
 }
 
 #arrow {
@@ -82,10 +83,6 @@ body {
     margin-top: 60px;
 }
 
-@keyframes is-bouncing {
-    to {
-        transform: translateX(20px);
-    }
-}
+
 
 

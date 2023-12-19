@@ -1,3 +1,5 @@
+@import url(./animations.css);
+
 *{
     margin: 0;
     padding: 0;
@@ -26,7 +28,6 @@ body {
     align-self: end;
     width: 160px;
     display: none;
-    /* visibility: hidden; */
 
 }
 
@@ -36,7 +37,6 @@ body {
     align-self: start;
     width: 250px;
     display: none;
-    /* visibility: hidden; */
 
 }
 
@@ -46,7 +46,6 @@ body {
     align-self: end;
     width: 230px;
     display: none;
-    /* visibility: hidden; */
 
 }
 
@@ -56,7 +55,6 @@ body {
     align-self: start;
     width: 100px;
     display: none;
-    /* visibility: hidden; */
 
 }
 
@@ -66,7 +64,6 @@ body {
     align-self: start;
     width: 100px;
     display: none;
-    /* visibility: hidden; */
 
 }
 
@@ -76,7 +73,6 @@ body {
     align-self: end;
     width: 85px;
     display: none;
-    /* visibility: hidden; */
 }
 
 
@@ -140,8 +136,6 @@ body {
     background-color: #D63B7E;
 }
 
-
-
 .switch__content {
     display: flex;
     flex-direction: column;
@@ -174,11 +168,33 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 80px; 
     display: block;
-    /* display: none; */
+    animation: appear 1s ease-in-out forwards;
 }
 
-@keyframes is-bouncing {
-    to {
-        transform: translateX(20px);
-    }
+.switch__container {
+    opacity: 0;
+}
+
+.switch__six{
+    animation: slide 0.5s ease-in-out forwards;
+}
+
+.switch__five{
+    animation: slide 0.5s ease-in-out 0.2s forwards;
+}
+
+.switch__four{
+    animation: slide 0.5s ease-in-out 0.4s forwards;
+}
+
+.switch__three{
+    animation: slide 0.5s ease-in-out 0.6s forwards;
+}
+
+.switch__two{
+    animation: slide 0.5s ease-in-out 0.8s forwards;
+}
+
+.switch__one{
+    animation: slide 0.5s ease-in-out 1s forwards;
 }

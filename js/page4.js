@@ -1,6 +1,11 @@
 const imageContainer = document.querySelector('.face__container');
 const buttonMinus = document.querySelector('.button__minus');
 let contadorSmall = 0, contadorBig = 0, largSmall;
+const arrow = document.querySelector('#arrow')
+
+arrow.onclick = () => {
+    window.location.href = 'index.html'
+}
 
 function gettingSmall() {
     contadorSmall += 30;
@@ -14,7 +19,7 @@ function gettingSmall() {
         
         document.querySelector('#light').style.display = 'block';
         document.querySelector('#minus__icon').style.display = 'none';
-        document.querySelector('#arrow').style.display = 'block';
+        arrow.style.display = 'block';
     }
 }
 
